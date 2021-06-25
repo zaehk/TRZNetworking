@@ -8,14 +8,14 @@ Pod::Spec.new do |spec|
     :type => 'MIT',
     :file => 'LICENSE' 
   }
-  spec.homepage     = 'https://github.com/zaehk/TRZ_Networking'
+  spec.homepage     = 'https://github.com/zaehk/TRZNetworking'
   spec.source       = { 
-    :git => 'https://github.com/zaehk/TRZ_Networking.git', 
+    :git => 'https://github.com/zaehk/TRZNetworking.git', 
     :branch => 'main',
     :tag => 'v1.0.0'
   }
   spec.summary      = 'Straightforward api rest framework'
   spec.source_files = '**/*.swift', '*.swift'
   spec.swift_versions = '5.0'
-  spec.ios.deployment_target = '13.0'
+  spec.ios.deployment_target = '14.5'
 end
