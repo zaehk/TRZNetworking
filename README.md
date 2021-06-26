@@ -22,7 +22,7 @@ import TRZNetworking
 ```
 
 
-You can implement URLRequestConfiguration protocol in an enum for example, so in the same file you can have different api calls that are related (for example api calls regarding a social network posts):
+You can implement URLRequestConfiguration protocol in an enum for example, so in the same file you can have different api calls that are related. For example api calls regarding a social network posts (create, delete, update, list...):
 
 ```
 enum PostsConfig: URLRequestConfiguration {
