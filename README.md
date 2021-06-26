@@ -15,8 +15,14 @@ pod 'TRZNetworking'
 
 ## How to create an api call configuration
 
-You can implement URLRequestConfiguration protocol in an enum for example, so in the same file you can have different api calls that are related (for example api calls regarding a social network posts):
+Dont forget to import:
 
+```
+import TRZNetworking
+```
+
+
+You can implement URLRequestConfiguration protocol in an enum for example, so in the same file you can have different api calls that are related (for example api calls regarding a social network posts):
 
 ```
 enum PostsConfig: URLRequestConfiguration {
@@ -50,6 +56,7 @@ enum PostsConfig: URLRequestConfiguration {
 ## Launching the actual API call
 
 Once the config of the calls has been filled (using an enum, struct or whatever) now we can launch the actuall call:
+
 
 ```
     private func getPosts(){
