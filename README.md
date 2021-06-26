@@ -5,7 +5,7 @@ Straightforward and easy to use api rest framework.
 [![Swift](https://img.shields.io/badge/pod-v1.0.0-blue)](https://img.shields.io/badge/pod-v1.0.0-blue)
 
 
-# Install
+## Install
 
 Installing TRZNetworking using cocoapods is possible:
 
@@ -13,7 +13,7 @@ Installing TRZNetworking using cocoapods is possible:
 pod 'TRZNetworking'
 ```
 
-# How to create an api call configuration
+## How to create an api call configuration
 
 You can implement URLRequestConfiguration protocol in an enum for example, so in the same file you can have different api calls that are related (for example api calls regarding a social network posts):
 
@@ -47,6 +47,8 @@ enum PostsConfig: URLRequestConfiguration {
 }
 ```
 
+## Launching the actual API call
+
 Once the config of the calls has been filled (using an enum, struct or whatever) now we can launch the actuall call:
 
 ```
@@ -58,6 +60,8 @@ Once the config of the calls has been filled (using an enum, struct or whatever)
         }
     }
 ```
+
+## Response models used to parse
 
 Keep in mind that the response model must be created beforehand and conform to decodable, in this example the model would be:
 
